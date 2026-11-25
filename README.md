@@ -11,7 +11,7 @@ Survey-based study of how managerial practices relate to early-career attrition 
 
 | Path | Contents |
 |---|---|
-| `paper/` | Final paper (PDF + DOCX) and presentation |
+| `paper/` | Final paper (PDF + DOCX), presentation, and its HTML source (`paper/slides/`) |
 | `data/survey_data_anonymized.csv` | Survey responses (N = 38), with timestamps and company names removed |
 | `analysis.py` | Single reproducible analysis script |
 | `results_clean/` | Output: `report.txt`, factor scores, figures |

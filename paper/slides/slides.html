@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Half Right: Managers and Early-Career Attrition Risk in India</title>
+<style>
+  @page { size: 720pt 405pt; margin: 0; }
+  :root { --or: #F26522; --ink: #1d1d1f; --mute: #5b5b60; --line: #e7e2dc; --soft: #fdf1ea; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color: var(--ink); }
+  .s { width: 720pt; height: 405pt; position: relative; overflow: hidden; page-break-after: always; background: #fff; padding: 30pt 40pt 26pt; display: flex; flex-direction: column; }
+  .s:last-child { page-break-after: auto; }
+  .s::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 8pt; background: var(--or); }
+  .num { position: absolute; right: 22pt; bottom: 12pt; font-size: 8pt; color: var(--mute); }
+  .kick { font-size: 8.5pt; letter-spacing: .12em; text-transform: uppercase; color: var(--or); font-weight: 700; margin-bottom: 4pt; }
+  h2 { font-size: 22pt; line-height: 1.15; font-weight: 700; margin-bottom: 14pt; }
+  p, li { font-size: 11.5pt; line-height: 1.42; }
+  ul { padding-left: 14pt; } li { margin-bottom: 5pt; } li::marker { color: var(--or); }
+  .row { display: flex; gap: 22pt; flex: 1; min-height: 0; }
+  .col { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+  .fig { flex: 1; min-height: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .fig img { max-width: 100%; max-height: 100%; object-fit: contain; }
+  .cap { font-size: 8.5pt; color: var(--mute); margin-top: 4pt; text-align: center; }
+  .big { font-size: 34pt; font-weight: 700; color: var(--or); line-height: 1; }
+  .stat { border-left: 3pt solid var(--or); padding: 2pt 0 2pt 10pt; margin-bottom: 12pt; }
+  .stat .l { font-size: 9.5pt; color: var(--mute); margin-top: 3pt; line-height: 1.3; }
+  .card { background: var(--soft); border-radius: 6pt; padding: 11pt 13pt; }
+  .card h3 { font-size: 11.5pt; margin-bottom: 5pt; color: var(--or); }
+  .card p, .card li { font-size: 10.5pt; }
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14pt; }
+  .grid2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14pt; }
+  table { border-collapse: collapse; width: 100%; font-size: 10.5pt; }
+  th, td { padding: 5pt 7pt; text-align: left; border-bottom: 1pt solid var(--line); }
+  th { font-size: 8.5pt; text-transform: uppercase; letter-spacing: .06em; color: var(--mute); }
+  td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
+  tr.hl td { font-weight: 700; }
+  .q { font-size: 12pt; line-height: 1.4; font-style: italic; border-left: 3pt solid var(--or); padding-left: 10pt; margin-bottom: 10pt; }
+  .q span { display: block; font-style: normal; font-size: 9pt; color: var(--mute); margin-top: 2pt; }
+  .note { font-size: 9pt; color: var(--mute); margin-top: auto; padding-top: 8pt; }
+  .hyp { font-size: 10.5pt; background: var(--soft); border-radius: 6pt; padding: 9pt 12pt; margin-top: 12pt; }
+  /* title & section */
+  .title { background: var(--or); color: #fff; padding: 0; flex-direction: row; }
+  .title::before { display: none; }
+  .title .txt { width: 52%; padding: 44pt 30pt 30pt 44pt; display: flex; flex-direction: column; }
+  .title h1 { font-size: 30pt; line-height: 1.08; font-weight: 800; }
+  .title .sub { font-size: 13pt; margin-top: 12pt; opacity: .95; line-height: 1.35; }
+  .title .by { margin-top: auto; font-size: 10.5pt; line-height: 1.45; }
+  .title .img { width: 48%; background: #f6ecdf url(../cover.png) center/cover no-repeat; }
+  .end { background: var(--or); color: #fff; justify-content: center; }
+  .end::before { display: none; }
+  .end h2 { font-size: 30pt; color: #fff; }
+  .end p { font-size: 14pt; max-width: 520pt; }
+  .refs li { font-size: 8.6pt; line-height: 1.3; margin-bottom: 3pt; break-inside: avoid; }
+  .refs ul { list-style: none; padding: 0; columns: 2; column-gap: 22pt; }
+</style>
+</head>
+<body>
+
+<!-- 1 -->
+<section class="s title">
+  <div class="txt">
+    <h1>Half Right</h1>
+    <div class="sub">Managers and Early-Career Attrition Risk in India<br><span style="opacity:.85;font-size:11pt">An exploratory mixed-methods pilot study</span></div>
+    <div class="by"><b>Saanvi Kanodia</b> (L014)<br>B.Tech CSE (Data Science), MPSTME, SVKM's NMIMS, Mumbai</div>
+  </div>
+  <div class="img"></div>
+</section>
+
+<!-- 2 -->
+<section class="s">
+  <div class="kick">Background</div>
+  <h2>Early-career attrition is costly, and usually blamed on the employee</h2>
+  <div class="row">
+    <div class="col">
+      <ul>
+        <li>High attrition in the first five years disrupts continuity, raises replacement costs and drains the skill pipeline.</li>
+        <li>Popular explanations are employee-centric: pay gaps, dissatisfaction, or "Gen Z impatience".</li>
+        <li>These overlook how <b>managerial systems and communication</b> shape whether people stay.</li>
+        <li>Evidence on generational differences in work attitudes is mixed (Twenge, 2010).</li>
+      </ul>
+    </div>
+    <div class="col">
+      <div class="card" style="margin-bottom:12pt"><h3>Research gap</h3><p>Little work in India puts managers' and employees' accounts side by side, or tests the managerial explanation against data.</p></div>
+      <div class="card"><h3>Core question</h3><p>Is attrition driven mainly by workforce expectations, or by gaps in managerial communication and structural predictability?</p></div>
+    </div>
+  </div>
+  <div class="num">2</div>
+</section>
+
+<!-- 3 -->
+<section class="s">
+  <div class="kick">Objectives</div>
+  <h2>What this study set out to do</h2>
+  <div class="grid3">
+    <div class="card"><h3>1 · Explore</h3><p>Qualitatively explore expectation mismatches between managers and employees on early-career retention.</p></div>
+    <div class="card"><h3>2 · Identify</h3><p>Quantitatively identify the organisational and managerial factors linked to turnover intent.</p></div>
+    <div class="card"><h3>3 · Test</h3><p>Test whether early-career employees face more workload pressure than seniors, the "Gen Z entitlement" hypothesis.</p></div>
+  </div>
+  <div class="hyp">
+    <b>H0:</b> Workload pressure does not differ between early-career and senior employees.<br>
+    <b>H1:</b> Early-career employees experience greater workload pressure than senior employees.
+  </div>
+  <div class="num">3</div>
+</section>
+
+<!-- 4 -->
+<section class="s">
+  <div class="kick">Conceptual framework</div>
+  <h2>Three lenses on attrition</h2>
+  <div class="grid3" style="margin-bottom:14pt">
+    <div class="card"><h3>Leader–Member Exchange</h3><p>Managerial clarity, feedback and fairness build trust and commitment (Graen &amp; Uhl-Bien, 1995).</p></div>
+    <div class="card"><h3>Job Demands–Resources</h3><p>Sustained, unpredictable demands lead to burnout and turnover intent (Bakker &amp; Demerouti, 2017).</p></div>
+    <div class="card"><h3>Psychological contract</h3><p>Attrition follows perceived breaches of implicit promises (Rousseau, 1995).</p></div>
+  </div>
+  <table>
+    <tr><th>Proposed construct</th><th>Survey items</th></tr>
+    <tr><td><b>Managerial Quality</b></td><td>Clarity of expectations, feedback, fair evaluation</td></tr>
+    <tr><td><b>Workload Pressure</b></td><td>Unpredictability, workload spikes, burnout</td></tr>
+    <tr><td><b>Job Conditions</b></td><td>Autonomy, flexibility, flexibility approval, fair pay, incentive clarity, recognition</td></tr>
+    <tr><td><b>Outcome</b></td><td>High attrition risk = intent to stay ≤ 2 (of 5)</td></tr>
+  </table>
+  <div class="num">4</div>
+</section>
+
+<!-- 5 -->
+<section class="s">
+  <div class="kick">Method</div>
+  <h2>Exploratory sequential mixed-methods design</h2>
+  <div class="row">
+    <div class="col card">
+      <h3>Phase 1 · Manager interviews</h3>
+      <ul>
+        <li>4 senior leaders (Director to VP level, 16–25 years' experience): insurance, agri-trade, consumer imaging MNC, communications agency</li>
+        <li>Purposive sampling; 45–60 min semi-structured online interviews</li>
+        <li>Inductive thematic analysis of interview notes (Braun &amp; Clarke, 2006)</li>
+      </ul>
+    </div>
+    <div class="col card">
+      <h3>Phase 2 · Employee survey</h3>
+      <ul>
+        <li><b>N = 38</b> professionals in India, 19–29 Oct 2025; convenience + snowball sampling</li>
+        <li>30 items on 5-point Likert scales, adapted from COPSOQ, LMX-7 and Mobley's turnover intention scale</li>
+        <li>Cronbach's α, PCA (KMO, Bartlett, parallel analysis), Welch t / Mann–Whitney (Holm), Fisher's exact, logistic regression with leave-one-out CV</li>
+      </ul>
+    </div>
+  </div>
+  <div class="note">One Python script reproduces every result: github.com/saanvi-kanodia/half-right-early-career-attrition</div>
+  <div class="num">5</div>
+</section>
+
+<!-- 6 -->
+<section class="s">
+  <div class="kick">Sample</div>
+  <h2>Who responded</h2>
+  <div class="row">
+    <div class="col" style="flex:.8">
+      <div class="stat"><div class="big">38</div><div class="l">respondents · 30 men, 8 women<br>20 aged ≤36, 14 with &lt;5 yrs experience</div></div>
+      <div class="stat"><div class="big">44.8</div><div class="l">mean weekly hours (SD 12.8)<br>mean daily commute 92 min</div></div>
+      <p style="font-size:10pt">Top industries: Banking / Financial Services, Consulting, Manufacturing. Mean experience 14.5 years, so many mid- and late-career respondents.</p>
+    </div>
+    <div class="col" style="flex:1.2">
+      <div class="fig"><img src="../../results_clean/figB3_reasons.png" alt=""></div>
+      <div class="cap">Reasons for leaving last job (multi-select): pay 42%, career growth 42%, poor managerial support 40%, workload 29%, culture 26%</div>
+    </div>
+  </div>
+  <div class="num">6</div>
+</section>
+
+<!-- 7 -->
+<section class="s">
+  <div class="kick">Results · Descriptives</div>
+  <h2>Last-minute change is the norm; burnout is not uniform</h2>
+  <div class="row">
+    <div class="col" style="flex:1.35"><div class="fig"><img src="../../results_clean/fig1_likert_distributions.png" alt=""></div></div>
+    <div class="col" style="justify-content:center">
+      <div class="stat"><div class="big">4.13</div><div class="l">Unpredictability mean (median 5): last-minute changes to tasks and deadlines are widespread</div></div>
+      <div class="stat"><div class="big">3.42</div><div class="l">Workload spikes mean (median 4)</div></div>
+      <p style="font-size:10pt">Burnout is spread across the scale (mean 2.84). Clarity, feedback, fair evaluation and intent to stay are <b>bimodal</b>: their means hide two distinct groups.</p>
+    </div>
+  </div>
+  <div class="num">7</div>
+</section>
+
+<!-- 8 -->
+<section class="s">
+  <div class="kick">Results · Age groups</div>
+  <h2>Younger and older respondents rate their jobs similarly</h2>
+  <div class="row">
+    <div class="col" style="flex:1.35"><div class="fig"><img src="../../results_clean/fig2_items_by_age.png" alt=""></div></div>
+    <div class="col" style="justify-content:center">
+      <ul>
+        <li>≤36 (n = 20) vs 37+ (n = 18), Mann–Whitney U, Holm-corrected across 17 items.</li>
+        <li>Younger respondents rate autonomy, predictability, fair evaluation and pay fairness slightly lower, but <b>no difference is significant</b> (smallest unadjusted p = .15).</li>
+        <li>Unpredictability and workload spikes are almost identical.</li>
+        <li>Only <b>intent to stay</b> approaches significance (2.80 vs 3.94; p = .053).</li>
+      </ul>
+    </div>
+  </div>
+  <div class="num">8</div>
+</section>
+
+<!-- 9 -->
+<section class="s">
+  <div class="kick">Results · Correlations</div>
+  <h2>Clarity and flexibility track retention; workload spikes track job search</h2>
+  <div class="row">
+    <div class="col" style="flex:1.1"><div class="fig"><img src="../../results_clean/fig3_correlations.png" alt=""></div></div>
+    <div class="col" style="justify-content:center">
+      <table>
+        <tr><th>Outcome</th><th>Strongest correlates</th></tr>
+        <tr><td><b>Intent to stay</b></td><td>WLB 0.75 · Clarity 0.72 · Flexibility approval 0.65</td></tr>
+        <tr><td><b>Job search</b></td><td>Flexibility approval −0.69 · Workload spikes +0.62 · Incentive clarity −0.61</td></tr>
+      </table>
+      <p style="font-size:10pt;margin-top:10pt">Managerial items are tightly linked (Clarity–Feedback r = 0.86). Burnout is nearly uncorrelated with everything, so the item may have been read inconsistently.</p>
+    </div>
+  </div>
+  <div class="num">9</div>
+</section>
+
+<!-- 10 -->
+<section class="s">
+  <div class="kick">Results · Structure</div>
+  <h2>One dominant dimension: how well the job and manager support you</h2>
+  <div class="row">
+    <div class="col" style="flex:.75"><div class="fig"><img src="../../results_clean/fig5_loadings.png" alt=""></div></div>
+    <div class="col">
+      <p style="font-size:10.5pt;margin-bottom:8pt">PCA of 14 predictor items (outcomes excluded). KMO = 0.83; Bartlett χ² = 410.9, p &lt; .001. Parallel analysis supports <b>one</b> component (54% of variance); three kept to mirror the framework (73%).</p>
+      <table>
+        <tr><th>Component</th><th>Loads on</th></tr>
+        <tr><td><b>1 · Managerial quality + job conditions</b></td><td>Flex. approval .93, Clarity .91, Recognition .91, Fair eval. .89</td></tr>
+        <tr><td><b>2 · Workload pressure</b></td><td>Unpredictability .71, Spikes .61, Burnout .57</td></tr>
+        <tr><td><b>3 · Individual stress</b></td><td>Burnout .73, Autonomy −.51, WLB −.41</td></tr>
+      </table>
+      <p style="font-size:9.5pt;margin-top:8pt;color:var(--mute)">Reliability α: Managerial Quality 0.92 · Job Conditions 0.91 · Workload Pressure 0.51 (0.62 without burnout)</p>
+    </div>
+  </div>
+  <div class="num">10</div>
+</section>
+
+<!-- 11 -->
+<section class="s">
+  <div class="kick">Results · Hypothesis test</div>
+  <h2>Same workload, different attrition risk</h2>
+  <div class="row">
+    <div class="col">
+      <div class="card" style="margin-bottom:10pt">
+        <h3>Workload pressure: no difference</h3>
+        <p>Item mean 3.80 (≤36) vs 3.75 (37+). Welch t(34.3) = 0.16, <b>p = .87</b>, d = 0.05; 95% CI −0.58 to 0.68. Component 2 and Mann–Whitney tests agree.</p>
+        <p style="margin-top:5pt"><b>H0 is not rejected.</b></p>
+      </div>
+      <div class="card">
+        <h3>Attrition risk: clearly higher for the young</h3>
+        <p>45% of ≤36 (9/20) vs 11% of 37+ (2/18) report high risk. Fisher's exact <b>OR = 6.5, p = .033</b>. By experience (&lt;5 yrs): 50% vs 17%, p = .061.</p>
+      </div>
+    </div>
+    <div class="col" style="flex:.8"><div class="fig"><img src="../../results_clean/fig6_risk_by_age.png" alt=""></div></div>
+  </div>
+  <div class="num">11</div>
+</section>
+
+<!-- 12 -->
+<section class="s">
+  <div class="kick">Results · Prediction</div>
+  <h2>Managerial quality is the strongest predictor of attrition risk</h2>
+  <div class="row">
+    <div class="col" style="flex:1.3">
+      <table>
+        <tr><th>Predictor (per 1 SD)</th><th class="n">Odds ratio</th><th class="n">95% CI</th><th class="n">p</th></tr>
+        <tr class="hl"><td>C1 · Managerial quality + job conditions</td><td class="n">0.043</td><td class="n">0.005–0.40</td><td class="n">.006</td></tr>
+        <tr><td>C2 · Workload pressure</td><td class="n">1.50</td><td class="n"></td><td class="n">.42</td></tr>
+        <tr><td>C3 · Individual stress</td><td class="n">3.44</td><td class="n"></td><td class="n">.073</td></tr>
+      </table>
+      <p style="font-size:10pt;margin-top:10pt">McFadden pseudo-R² = 0.57; LR χ²(3) = 25.9, p &lt; .001. Adding age group did not reduce the age effect (adjusted OR = 45.8, p = .083), so managerial quality does not explain why younger people report more risk.</p>
+    </div>
+    <div class="col" style="flex:.7">
+      <div class="stat"><div class="big">0.85</div><div class="l">ROC-AUC, leave-one-out cross-validated<br>(in-sample 0.94 overstates it)</div></div>
+      <div class="stat"><div class="big">0.79</div><div class="l">accuracy · F1 = 0.64</div></div>
+    </div>
+  </div>
+  <div class="note">Only 11 high-risk cases (≈3.7 events per predictor): estimates are unstable and should be read as directional.</div>
+  <div class="num">12</div>
+</section>
+
+<!-- 13 -->
+<section class="s">
+  <div class="kick">Qualitative findings</div>
+  <h2>What managers said</h2>
+  <div class="row">
+    <div class="col">
+      <div class="q">"Work-life balance is a Gen Z problem." They "don't know what to give to the company, but they know what they want from the company."<span>Participant A · Director, insurance</span></div>
+      <div class="q">"Blaming Gen Z is not a solution." "Clarity of work expectation is not there in most places."<span>Participant C · former country business manager, MNC</span></div>
+    </div>
+    <div class="col">
+      <div class="q">If stress is constant "instead of it being a seasonal pressure time", people "can't handle it". "Poor planning, poor communication, that is what creates stress."<span>Participant C</span></div>
+      <div class="q">At a previous employer "expectations were not clear, and acknowledgement was not given."<span>Participant D · founder, communications agency</span></div>
+    </div>
+  </div>
+  <div class="note">Quotes are from interview notes and may be close paraphrases. Four interviews: illustrative, not saturated.</div>
+  <div class="num">13</div>
+</section>
+
+<!-- 14 -->
+<section class="s">
+  <div class="kick">Discussion</div>
+  <h2>Managers are half right</h2>
+  <div class="grid2" style="margin-bottom:12pt">
+    <div class="card"><h3>Right</h3><ul><li>Younger employees <b>are</b> more likely to leave (45% vs 11%).</li><li>Early turnover <b>is</b> costly: ~33% attrition at one firm; ~3 months to replace, 6–9 more to full productivity.</li></ul></div>
+    <div class="card"><h3>Wrong</h3><ul><li>Workload intolerance does <b>not</b> explain it: workload pressure was the same across ages.</li><li>The strongest correlate is something organisations control: clarity, fair evaluation, feedback, flexibility.</li></ul></div>
+  </div>
+  <ul>
+    <li><b>Clarity deficit:</b> Clarity (3.34), Feedback (3.03) and Fair evaluation (3.13) sit near the midpoint.</li>
+    <li><b>Predictability, not hours:</b> chaotic demands, not volume, are the shared complaint.</li>
+    <li><b>Flexibility is contested:</b> managers disagree, yet ease of approval is the strongest correlate of job search (r = −0.69).</li>
+  </ul>
+  <div class="num">14</div>
+</section>
+
+<!-- 15 -->
+<section class="s">
+  <div class="kick">Implications</div>
+  <h2>What organisations can do</h2>
+  <div class="grid2">
+    <div class="card"><h3>Build managerial quality</h3><p>Train managers in goal clarity, monthly feedback and transparent evaluation.</p></div>
+    <div class="card"><h3>Plan for predictability</h3><p>Advance-notice policies for deadlines and resource buffers for spikes.</p></div>
+    <div class="card"><h3>Calibrate job conditions</h3><p>Structured hybrid work that pairs in-office mentoring with flexibility; fair pay and meaningful recognition.</p></div>
+    <div class="card"><h3>Make retention a manager KPI</h3><p>Link team attrition to leadership evaluations, with extra attention to onboarding and early-tenure career paths.</p></div>
+  </div>
+  <div class="num">15</div>
+</section>
+
+<!-- 16 -->
+<section class="s">
+  <div class="kick">Limitations &amp; future work</div>
+  <h2>Read the results as signals, not proof</h2>
+  <div class="row">
+    <div class="col">
+      <h3 style="font-size:12pt;margin-bottom:6pt">Limitations</h3>
+      <ul>
+        <li>Small, non-random sample (N = 38; 79% men; only 14 with &lt;5 yrs experience).</li>
+        <li>Cross-sectional and self-reported; intent is a proxy for turnover.</li>
+        <li>11 high-risk cases make regression unstable.</li>
+        <li>Weak reliability of workload and burnout items.</li>
+        <li>Four interviews, notes only, no IT managers; managers and respondents from different firms.</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h3 style="font-size:12pt;margin-bottom:6pt">Next steps</h3>
+      <ul>
+        <li>Larger multi-sector samples (N &gt; 200) with an explicit early-career subgroup.</li>
+        <li>Integrate HRIS data on actual turnover.</li>
+        <li>Refine the workload and burnout items.</li>
+        <li>Test <b>why</b> younger employees report higher risk, and whether trust and fairness mediate the managerial-quality effect.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="num">16</div>
+</section>
+
+<!-- 17 -->
+<section class="s end">
+  <h2>Conclusion</h2>
+  <p>Early-career employees in this sample were far more likely to intend to leave, but <b>workload does not explain why</b>.</p>
+  <p style="margin-top:12pt">Clearer expectations, fair evaluation, regular feedback and predictable work are the most promising levers, and should be tested in larger studies.</p>
+</section>
+
+<!-- 18 -->
+<section class="s refs">
+  <div class="kick">References</div>
+  <ul>
+    <li>Bakker, A. B., &amp; Demerouti, E. (2017). Job demands–resources theory: Taking stock and looking forward. <i>Journal of Occupational Health Psychology, 22</i>(3), 273–285.</li>
+    <li>Braun, V., &amp; Clarke, V. (2006). Using thematic analysis in psychology. <i>Qualitative Research in Psychology, 3</i>(2), 77–101.</li>
+    <li>Creswell, J. W., &amp; Plano Clark, V. L. (2018). <i>Designing and conducting mixed methods research</i> (3rd ed.). Sage.</li>
+    <li>Eisenberger, R., et al. (2010). Leader–member exchange and affective organizational commitment. <i>Journal of Applied Psychology, 95</i>(6), 1085–1103.</li>
+    <li>Graen, G. B., &amp; Uhl-Bien, M. (1995). Relationship-based approach to leadership: Development of LMX theory over 25 years. <i>The Leadership Quarterly, 6</i>(2), 219–247.</li>
+    <li>Hom, P. W., Lee, T. W., Shaw, J. D., &amp; Hausknecht, J. P. (2017). One hundred years of employee turnover theory and research. <i>Journal of Applied Psychology, 102</i>(3), 530–545.</li>
+    <li>Hsieh, F. Y., Bloch, D. A., &amp; Larsen, M. D. (1998). A simple method of sample size calculation for linear and logistic regression. <i>Statistics in Medicine, 17</i>(14), 1623–1634.</li>
+    <li>Karasek, R. A., Jr. (1979). Job demands, job decision latitude, and mental strain. <i>Administrative Science Quarterly, 24</i>(2), 285–308.</li>
+    <li>Kristensen, T. S., Hannerz, H., Høgh, A., &amp; Borg, V. (2005). The Copenhagen Psychosocial Questionnaire. <i>Scand. J. Work, Environment &amp; Health, 31</i>(6), 438–449.</li>
+    <li>March, J. G., &amp; Simon, H. A. (1958). <i>Organizations</i>. Wiley.</li>
+    <li>Mobley, W. H. (1977). Intermediate linkages in the relationship between job satisfaction and employee turnover. <i>Journal of Applied Psychology, 62</i>(2), 237–240.</li>
+    <li>Mobley, W. H., Horner, S. O., &amp; Hollingsworth, A. T. (1978). An evaluation of precursors of hospital employee turnover. <i>Journal of Applied Psychology, 63</i>(4), 408–414.</li>
+    <li>Rousseau, D. M. (1995). <i>Psychological contracts in organizations</i>. Sage.</li>
+    <li>Twenge, J. M. (2010). A review of the empirical evidence on generational differences in work attitudes. <i>Journal of Business and Psychology, 25</i>(2), 201–210.</li>
+  </ul>
+  <div class="num">18</div>
+</section>
+
+</body>
+</html>
