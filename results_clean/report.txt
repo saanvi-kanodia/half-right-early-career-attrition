@@ -1,0 +1,138 @@
+
+==============================================================================
+1. SAMPLE
+==============================================================================
+N = 38 (Likert items complete: 38)
+Gender: {'Male': 30, 'Female': 8}
+Age: {'<25': 4, '25-30': 14, '31-36': 2, '37-42': 4, '43-48': 5, '49+': 9}
+Age <=36: 20  |  Experience <5 yrs: 14  |  both: 14
+
+Continuous variables:
+       Avg_Hours  Commute_Min  Tenure  Experience
+count      37.00        36.00   37.00       38.00
+mean       44.82        92.24    6.39       14.17
+std        12.75        80.89    9.09       11.86
+min         8.00         0.00    0.00        0.50
+25%        40.00        37.50    1.00        4.00
+50%        45.00        70.00    2.00       10.80
+75%        50.00       127.50    7.00       20.75
+max        70.00       420.00   38.00       37.00
+
+Likert items (mean, SD, median):
+                      mean   std  median
+Clarity               3.34  1.42     3.0
+Feedback              3.03  1.67     3.0
+Predictability        3.05  1.31     3.0
+Unpredictability      4.13  1.14     5.0
+Workload_Spikes       3.42  1.11     4.0
+Autonomy              2.92  1.51     3.0
+Flexibility           2.84  1.53     3.0
+Flexibility_Approval  3.29  1.59     4.0
+Fair_Evaluation       3.13  1.56     3.0
+Fair_Compensation     3.16  1.22     3.0
+Incentive_Clarity     3.21  1.42     3.5
+Recognition           3.39  1.42     4.0
+Burnout               2.84  1.35     3.0
+WLB                   3.32  1.44     4.0
+Intent_to_Stay        3.34  1.65     4.0
+Job_Search            2.63  1.70     2.0
+Colleague_Influence   2.71  1.51     2.5
+
+Reasons for leaving (multi-select):
+                                                      n  % of respondents  % of mentions
+Reasons_Leaving                                                                         
+Better compensation or benefits                      16              42.1           16.2
+Lack of career growth opportunities                  16              42.1           16.2
+Poor managerial support or leadership                15              39.5           15.2
+Excessive workload / poor work-life balance          11              28.9           11.1
+Workplace culture issues                             10              26.3           10.1
+Lack of recognition or rewards                        7              18.4            7.1
+Unclear performance expectations                      6              15.8            6.1
+Personal reasons (relocation, family, health, etc.)   5              13.2            5.1
+
+==============================================================================
+2. RELIABILITY (Cronbach's alpha)
+==============================================================================
+Managerial Quality                     k=3  alpha=0.921
+Workload Pressure (incl. Burnout)      k=3  alpha=0.509
+Workload Pressure (excl. Burnout)      k=2  alpha=0.617
+Job Conditions                         k=6  alpha=0.907
+
+==============================================================================
+3. DIMENSION REDUCTION (predictor items only; outcomes excluded)
+==============================================================================
+KMO = 0.832   Bartlett chi2 = 410.9, p = 3.48e-42   (items=14, N=38)
+Eigenvalues: [7.55, 1.58, 1.13, 0.85, 0.77, 0.54]
+Kaiser (>1) retains 3; parallel analysis (95th pct, 1000 sims) retains 1
+Explained variance: [0.539, 0.113, 0.081]
+
+Loadings (component x sqrt(eigenvalue)):
+                        F1    F2    F3
+Clarity               0.91 -0.10  0.01
+Feedback              0.83 -0.18  0.18
+Predictability        0.71  0.32 -0.03
+Unpredictability     -0.29  0.71  0.04
+Workload_Spikes      -0.50  0.61 -0.18
+Autonomy              0.64  0.31 -0.51
+Flexibility           0.78  0.34 -0.07
+Flexibility_Approval  0.93  0.09  0.03
+Fair_Evaluation       0.89 -0.14  0.17
+Fair_Compensation     0.72 -0.03 -0.09
+Incentive_Clarity     0.88 -0.01  0.19
+Recognition           0.91 -0.03  0.22
+Burnout               0.01  0.57  0.73
+WLB                   0.77  0.20 -0.41
+
+==============================================================================
+4. AGE-GROUP COMPARISONS (<=36 vs 37+)
+==============================================================================
+n early = 20, n senior = 18
+Workload composite (Unpred+Spikes): early M=3.80 (SD 1.11), senior M=3.75 (SD 0.79); Welch t(34.3)=0.162, p=0.873; diff 95% CI [-0.58, 0.68]; d=0.05; Mann-Whitney p=0.592
+Workload factor score (F2): early M=-0.07 (SD 1.65), senior M=0.07 (SD 0.70); Welch t(26.2)=-0.341, p=0.736; diff 95% CI [-0.97, 0.69]; d=-0.11; Mann-Whitney p=0.849
+
+All items, Mann-Whitney U with Holm correction:
+                item  mean_early  mean_senior  med_early  med_senior     p  p_holm
+             Clarity        3.25        3.444        3.0         3.5 0.696   1.000
+            Feedback        3.05        3.000        3.0         3.0 0.916   1.000
+      Predictability        2.80        3.333        3.0         4.0 0.158   1.000
+    Unpredictability        4.10        4.167        5.0         4.5 0.949   1.000
+     Workload_Spikes        3.50        3.333        4.0         4.0 0.689   1.000
+            Autonomy        2.60        3.278        2.5         4.0 0.150   1.000
+         Flexibility        2.75        2.944        2.5         3.0 0.675   1.000
+Flexibility_Approval        3.25        3.333        3.5         4.0 0.868   1.000
+     Fair_Evaluation        2.90        3.389        3.0         4.0 0.392   1.000
+   Fair_Compensation        2.95        3.389        3.0         3.5 0.241   1.000
+   Incentive_Clarity        3.00        3.444        3.0         4.0 0.338   1.000
+         Recognition        3.50        3.278        4.0         3.5 0.696   1.000
+             Burnout        2.95        2.722        3.5         3.0 0.576   1.000
+                 WLB        3.10        3.556        4.0         4.0 0.425   1.000
+      Intent_to_Stay        2.80        3.944        3.0         4.0 0.053   0.902
+          Job_Search        2.75        2.500        2.5         2.0 0.830   1.000
+ Colleague_Influence        3.05        2.333        3.5         2.0 0.158   1.000
+
+High attrition risk (Intent_to_Stay <= 2) by age group:
+High_Risk     Low  High
+Early_Career           
+Senior         16     2
+Early          11     9
+Fisher exact: OR = 6.55, p = 0.033
+Same by experience <5 yrs: OR = 5.00, p = 0.061  (table [[20, 4], [7, 7]])
+
+==============================================================================
+5. LOGISTIC REGRESSION: High_Risk ~ F1 + F2 + F3 (factors from predictors only)
+==============================================================================
+Events: 11/38  (events per predictor = 3.7; <10 means estimates are unstable)
+        coef     OR  OR_lo   OR_hi      p
+const -2.437  0.087  0.012   0.628  0.015
+F1    -3.155  0.043  0.005   0.397  0.006
+F2     0.406  1.500  0.560   4.021  0.420
+F3     1.235  3.439  0.890  13.293  0.073
+McFadden pseudo-R2 = 0.566; LR chi2(3) = 25.86, p = 1.02e-05
+F1 per-SD change in odds: -95.7%
+
+Does F1 account for the age gap?  Age OR alone = 6.55 (p=0.032); Age OR controlling F1-F3 = 45.82 (p=0.083); F1 OR with age = 0.01 (p=0.027)
+
+Out-of-sample performance (leave-one-out CV; scaler + PCA refit inside each fold):
+AUC=0.848  Acc=0.789  Prec=0.636  Rec=0.636  F1=0.636
+Confusion matrix [[TN FP],[FN TP]]: [[23, 4], [4, 7]]
+(In-sample, for comparison only: AUC=0.943, Acc=0.816)

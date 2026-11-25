@@ -1,0 +1,5 @@
+.venv/
+.DS_Store
+__pycache__/
+# raw, identifiable respondent data and interview transcripts are kept private
+research_project/
