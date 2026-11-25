@@ -1,5 +1,7 @@
 # Half Right: Managers and Early-Career Attrition Risk in India
 
+![Manager and early-career employee seeing the same job differently](paper/cover.png)
+
 Survey-based study of how managerial practices relate to early-career attrition risk among Indian professionals.
 
 - **Paper:** [paper/half-right-early-career-attrition.pdf](paper/half-right-early-career-attrition.pdf)
